@@ -1,9 +1,9 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import heroImg from "@/assets/hero.jpg";
-import handsImg from "@/assets/hands.jpg";
-import walkImg from "@/assets/walk.jpg";
-import flowersImg from "@/assets/flowers.jpg";
+import heroImg from "@/assets/hero.jpeg";
+import handsImg from "@/assets/first.jpeg";
+import walkImg from "@/assets/auto.jpeg";
+import flowersImg from "@/assets/bosque.jpeg";
 
 function FadeSection({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
@@ -30,7 +30,7 @@ function ParallaxImage({ src, alt }: { src: string; alt: string }) {
         src={src}
         alt={alt}
         style={{ y }}
-        className="w-full h-auto object-cover scale-110"
+        className="max-w-[375px] mx-auto overflow-hidden rounded-2xl"
         loading="lazy"
       />
     </div>
@@ -66,7 +66,7 @@ export function AnniversaryPage() {
             transition={{ duration: 1, delay: 0.3 }}
             className="text-muted-foreground tracking-[0.3em] uppercase text-sm font-body mb-6"
           >
-            Celebrating
+            Celebramos
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -74,7 +74,7 @@ export function AnniversaryPage() {
             transition={{ duration: 1.2, delay: 0.6 }}
             className="font-display text-7xl md:text-9xl font-medium text-foreground tracking-tight"
           >
-            3 Years
+            3 meses
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -82,7 +82,7 @@ export function AnniversaryPage() {
             transition={{ duration: 1, delay: 1 }}
             className="text-primary font-display italic text-2xl md:text-3xl mt-4"
           >
-            of you & me
+            de lo nuestro
           </motion.p>
         </motion.div>
 
@@ -98,10 +98,10 @@ export function AnniversaryPage() {
       {/* Section 1 */}
       <section className="max-w-5xl mx-auto px-6 py-32 md:py-48">
         <FadeSection>
-          <p className="text-primary tracking-[0.2em] uppercase text-xs mb-8">The beginning</p>
+          <p className="text-primary tracking-[0.2em] uppercase text-xs mb-8">Así comenzamos</p>
           <h2 className="font-display text-4xl md:text-6xl text-foreground leading-tight mb-12">
-            From the first moment,<br />
-            <span className="text-primary italic">I knew.</span>
+            Nuestro primer momento,<br />
+            <span className="text-primary italic">Y hasta, ¿ahora que hacemos?</span>
           </h2>
         </FadeSection>
         <FadeSection className="mt-8">
@@ -109,9 +109,11 @@ export function AnniversaryPage() {
         </FadeSection>
         <FadeSection className="mt-16 max-w-2xl">
           <p className="text-muted-foreground text-lg md:text-xl leading-relaxed font-body">
-            Three years ago, something beautiful started. A glance that turned into a conversation, 
-            a conversation that turned into forever. Every day with you feels like the first — 
-            full of wonder, warmth, and a love that only grows deeper.
+            Más de tres meses conociéndonos, compartiendo risas, llantos, sueños
+            emociones, conversaciones difíciles, generando confianza, construyendo un
+            hogar aún a la distancia entregándonos cariño y por sobre todo, eligiéndonos
+            y amándonos porque si, amar es una elección de entrega y recepción. No somos perfectos, 
+            si estamos dispuestos a seguir creciendo y construir este vínculo y relación.
           </p>
         </FadeSection>
       </section>
@@ -126,17 +128,17 @@ export function AnniversaryPage() {
       {/* Section 2 */}
       <section className="max-w-5xl mx-auto px-6 py-32 md:py-48">
         <FadeSection>
-          <p className="text-primary tracking-[0.2em] uppercase text-xs mb-8">Every moment</p>
+          <p className="text-primary tracking-[0.2em] uppercase text-xs mb-8">Cada momento</p>
           <h2 className="font-display text-4xl md:text-6xl text-foreground leading-tight mb-12">
-            You make the ordinary<br />
-            <span className="text-primary italic">extraordinary.</span>
+            se vuelve especial y<br />
+            <span className="text-primary italic">un abrazo tuyo calma todo.</span>
           </h2>
         </FadeSection>
         <FadeSection className="mt-16 max-w-2xl ml-auto text-right">
           <p className="text-muted-foreground text-lg md:text-xl leading-relaxed font-body">
-            The quiet mornings, the late-night talks, the silly laughs over nothing — 
-            these are the moments I treasure most. You are my favorite chapter 
-            in the story of my life.
+            Cada buen día, buenas noches, ya llegué, voy a..., avísame cuando llegues, lo hacemos
+            por cariño y cuidado, no por control. Quizá no lo entiendan, pero así hemos generado
+            hábitos y forjado nuestra confianza, hablando y no guardándonos las cosas. 
           </p>
         </FadeSection>
       </section>
@@ -157,14 +159,14 @@ export function AnniversaryPage() {
             viewport={{ once: true }}
             transition={{ duration: 1.2, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
-            <p className="text-primary tracking-[0.2em] uppercase text-xs mb-8">Forever & always</p>
+            <p className="text-primary tracking-[0.2em] uppercase text-xs mb-8">Por muchos más</p>
             <h2 className="font-display text-5xl md:text-8xl text-foreground leading-tight mb-8">
-              Happy Anniversary,<br />
-              <span className="text-primary italic">my love.</span>
+              Feliz aniversario,<br />
+              <span className="text-primary italic">mi amorchito rico.</span>
             </h2>
             <p className="text-muted-foreground text-lg md:text-xl leading-relaxed font-body max-w-xl mx-auto">
-              Here's to a thousand more sunsets, a million more laughs, 
-              and an eternity of this beautiful thing we call us.
+              Por más viajes, comidas, risas y momentos de intimidad, no solo sexual, sino que también 
+              en silencio y un abrazo.
             </p>
             <div className="mt-16">
               <motion.span
